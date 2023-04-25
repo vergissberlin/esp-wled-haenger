@@ -1,0 +1,48 @@
+{
+    "remote": "apple-imac",
+    "0x77E1E050": {
+        "label": "Left",
+        "pos": "left",
+        "cmd": "PL=7"
+    },
+    "0x77E11050": {
+        "label": "Right",
+        "pos": "right",
+        "cmd": "PL=6"
+    },
+    "0x77E1B050": {
+        "label": "On/Off",
+        "pos": "down",
+        "cmd": "PL=2"
+    },
+    "0x77E1D050": {
+        "label": "Warnlicht",
+        "pos": "up",
+        "cmd": "PL=5"
+    },
+    "0x77E12050": {
+        "label": "Preset",
+        "pos": "Play",
+        "cmd": "T=2",
+        "rpt": true
+    },
+    "0x77E14050": {
+        "label": "Interate",
+        "pos": "Menu",
+        "cmnt": "prime example of a playlist that cycles every 18 seconds and continues to repeat",
+        "cmd": {
+            "playlist": {
+                "ps": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "dur": 24,
+                "transition": 12,
+                "repeat": 4,
+                "end": 1
+            }
+        }
+    }
+}
